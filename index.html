@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Amistad Invaluable</title>
+  <style>
+    /* Estilos Generales */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background: #f4f4f9;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    /* Sección Genérica */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background: #eaeef3;
+    }
+
+    .section h2 {
+      animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Imagen y Galería */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Botón de Llamada a la Acción */
+    .call-to-action button {
+      padding: 15px 40px;
+      font-size: 1.2em;
+      border: none;
+      background: #2575fc;
+      color: white;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .call-to-action button:hover {
+      background: #6a11cb;
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Una Amistad que Vale Oro</h1>
+    <p>Una oportunidad para redescubrir lo que significa la verdadera amistad.</p>
+  </header>
+
+  <main>
+    <!-- Sección 1 -->
+    <section class="section">
+      <h2>Él Es Especial</h2>
+      <p>Es leal, gracioso y busca lo mejor para sus amigos. Aunque a veces se equivoque, su corazón está en el lugar correcto.</p>
+      <img src="https://via.placeholder.com/600x300" alt="Amigos felices">
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="section">
+      <h2>Lo Que Quiere Decirte</h2>
+      <p>"Sé que cometí un error, pero estoy dispuesto a hacer lo que sea necesario para demostrar cuánto valoro esta amistad."</p>
+    </section>
+
+    <!-- Sección 3 -->
+    <section class="section">
+      <h2>Momentos Inolvidables</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200x150" alt="Momento 1">
+        <img src="https://via.placeholder.com/200x150" alt="Momento 2">
+        <img src="https://via.placeholder.com/200x150" alt="Momento 3">
+      </div>
+    </section>
+
+    <!-- Sección 4 -->
+    <section class="section call-to-action">
+      <h2>¿Estás Lista para Perdonar?</h2>
+      <button id="forgiveButton">¡Sí, le doy otra oportunidad!</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💖 para recordar que las amistades verdaderas son únicas.</p>
+  </footer>
+
+  <script>
+    // Efectos JavaScript
+    document.getElementById('forgiveButton').addEventListener('click', function() {
+      const button = this;
+      button.textContent = '¡Gracias!';
+      button.style.backgroundColor = '#4caf50';
+      alert('Gracias por considerar darle una segunda oportunidad. 💖');
+    });
+  </script>
+</body>
+</html>
